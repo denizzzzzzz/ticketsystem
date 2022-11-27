@@ -15,7 +15,7 @@
                 <a class="nav-link" href="Over-Ons">Over ons</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="Events">Eventss</a>
+                <a class="nav-link" href="Events">Events</a>
             </li>
             @auth
                 @if(Auth::user()->is_admin)
