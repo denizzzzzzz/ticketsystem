@@ -1,24 +1,30 @@
 @extends('layouts.base')
 
 @section('content')
-    <form>
-        <div class="form-group">
-            <h1 class="h1 contactTitle">Contact</h1>
-            <label for="exampleFormControlInput1">Email-address</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    <section class="bg-gray-900">
+        <div class="bg-[#000000]">
+            <div class="flex justify-center">
+            <h1 class="text-8xl text-[#EDF2F4] font-bold pb-4">Contact us</h1>
+            </div>
         </div>
-        <div class="form-group">
-            <label for="exampleFormControlSelect1">Soort contact</label>
-            <select class="form-control" id="exampleFormControlSelect1">
-                <option>Geld terug</option>
-                <option>Feedback</option>
-                <option>Problemen met ticket</option>
-                <option>Vervoer</option>
-            </select>
+        <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+
+            <p class="mb-4  font-light text-center text-gray-400 sm:text-xl">Do you have any complaints about an event or does your ticket not work? Don't hesitate to contact us!</p>
+            <form action="#" class="space-y-8">
+                <div>
+                    <label for="email" class="block mb-2  font-medium text-4xl text-gray-300">Your email</label>
+                    <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus    :ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="name@email.com" required>
+                </div>
+                <div>
+                    <label for="subject" class="block mb-2 text-sm font-medium text-4xl text-gray-900 dark:text-gray-300">Subject</label>
+                    <input type="text" id="subject" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Let us know how we can help you" required>
+                </div>
+                <div class="sm:col-span-2">
+                    <label for="message" class="block mb-2 text-sm font-medium text-4xl text-gray-900 dark:text-gray-400">Your message</label>
+                    <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a comment..."></textarea>
+                </div>
+                <button type="submit" class="py-3 px-5 text-sm font-medium text-2xl text-center text-white bg-black rounded-lg hover:bg-white hover:text-black">Send message</button>
+            </form>
         </div>
-        <div class="form-group">
-            <label for="exampleFormControlTextarea1">Leg hieronder uit waar we u mee kunnen helpen:</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div>
-    </form>
+    </section>
 @endsection

@@ -1,36 +1,20 @@
+@extends('layouts.base')
 
-    @extends('layouts.base')
-        @section('content')
-
-            <div class="site-wrapper">
-
-                <div class="site-wrapper-inner">
-
-                    <div class="container">
-
-
-
-                        <div class="inner cover">
-                            <h1 class="display-1 AboutTitle">TicketSystem</h1>
-                            <div class="about-text">
-                            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                            <p class="lead">Cupiditate eaque facere, quas quia saepe sit soluta tempore </p>
-                            <p class="lead">voluptates. Aperiam atque dolorum ducimus ex impedit iste nobis </p>
-                            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                            <p class="lead">Cupiditate eaque facere, quas quia saepe sit soluta tempore </p>
-                            <p class="lead">voluptates. Aperiam atque dolorum ducimus ex impedit iste nobis </p>
-                                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <p class="lead">Cupiditate eaque facere, quas quia saepe sit soluta tempore </p>
-                                <p class="lead">voluptates. Aperiam atque dolorum ducimus ex impedit iste nobis </p>
-                            </div>
-
-
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-        @endsection
+@section('content')
+    <div class="bg-[#000000]">
+        <h1 class="text-8xl text-[#EDF2F4] font-bold pb-4 mb-6">About Ticket Systeem</h1>
+    </div>
+    <div class="flex justify-center">
+        <div class="max-w-4xl text-2xl bg-[#13293D] rounded-lg p-6" >
+            <h2 class="text-left text-3xl">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Assumenda esse quaerat quisquam. Consequuntur dicta excepturi expedita harum nam,
+                officiis possimus suscipit tempore! Ad asperiores excepturi minima nam, n
+                umquam temporibus voluptatum?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Assumenda esse quaerat quisquam. Consequuntur dicta excepturi expedita harum nam,
+                officiis possimus suscipit tempore! Ad asperiores excepturi minima nam, n
+                umquam temporibus voluptatum?
+            </h2>
+        </div>
+@endsection

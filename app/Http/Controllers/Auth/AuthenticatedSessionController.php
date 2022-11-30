@@ -35,7 +35,6 @@ class AuthenticatedSessionController extends Controller
         return redirect()->intended(RouteServiceProvider::HOME);
     }
 
-
     /**
      * Destroy an authenticated session.
      *
@@ -52,16 +51,4 @@ class AuthenticatedSessionController extends Controller
 
         return redirect('/');
     }
-    public function logout(){
-
-        Auth::logout();
-        return redirect()->route('home');
-    }
-    protected function authenticated()
-    {
-        if (Auth::check()) {
-            return redirect()->route('/');
-        }
-    }
-
 }

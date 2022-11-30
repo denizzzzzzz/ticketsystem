@@ -1,13 +1,23 @@
 @extends('layouts.base')
 
 @section('content')
-<div class="HomeContainer">
-
-<h1 class="display-1 HeaderTitle">TicketSysteem</h1>
+<div class="bg-[#000000]">
+    <div class="flex justify-center">
+    <h1 class="text-8xl text-[#EDF2F4] font-bold pb-4 mb-6">Ticket Systeem</h1>
+    </div>
+</div>
+<div class="flex justify-center">
+    <div class="max-w-2xl text-2xl bg-[#13293D] rounded-lg p-6 text-white" >
+<h2 class="text-left text-3xl">This is a website where you can order tickets for al kinds of events such as:</h2>
+        <br>
+    <h2 class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Consequuntur dolor est quos sed voluptates!
+        A blanditiis commodi, cupiditate eius, laboriosam maxime odit
+        omnis optio
+        provident quis rem reprehenderit vitae voluptate?</h2>
+    </div>
 
 </div>
-
-
 
 
 
