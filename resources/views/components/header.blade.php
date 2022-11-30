@@ -19,9 +19,13 @@
 
             @auth
                 @if(Auth::user()->is_admin)
-                    <a class="text-2xl" href="{{ url('addevents') }}" class="text-lg text-gray-700 dark:text-white ">Add events</a>
+                    <a class="text-2xl" href="{{ url('admin') }}" class="text-lg text-gray-700 dark:text-white ">ADMIN</a>
                 @endif
-                <a class="text-2xl" href="{{ route('logout') }}" class="text-lg text-gray-700 dark:text-white ">Logout</a>
+
+            <form action="{{ route('logout') }}" method="POST">
+                @csrf
+                <button type="submit" class="text-lg text-gray-700 dark:text-white text-2xl ">Logout</button>
+            </form>
             @endauth
 
             @guest

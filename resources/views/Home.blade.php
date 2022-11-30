@@ -7,7 +7,7 @@
     </div>
 </div>
 <div class="flex justify-center">
-    <div class="max-w-2xl text-2xl bg-[#13293D] rounded-lg p-6 text-white" >
+    <div class="max-w-2xl text-2xl bg-[#13293D] rounded-lg p-6 text-white mt-8" >
 <h2 class="text-left text-3xl">This is a website where you can order tickets for al kinds of events such as:</h2>
         <br>
     <h2 class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -16,7 +16,6 @@
         omnis optio
         provident quis rem reprehenderit vitae voluptate?</h2>
     </div>
-
 </div>
 
 

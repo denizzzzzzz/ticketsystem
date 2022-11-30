@@ -4,7 +4,7 @@
     <section class="bg-gray-900">
         <div class="bg-[#000000]">
             <div class="flex justify-center">
-            <h1 class="text-8xl text-[#EDF2F4] font-bold pb-4">Contact us</h1>
+            <h1 class="text-8xl text-[#EDF2F4] font-medium pb-4">Contact us</h1>
             </div>
         </div>
         <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">

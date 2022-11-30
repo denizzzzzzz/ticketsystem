@@ -13,7 +13,7 @@ class EventsController extends Controller
      */
     public function index()
     {
-        return view('addevents');
+        return view('adminpage');
     }
 
 

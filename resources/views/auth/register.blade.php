@@ -1,3 +1,6 @@
+@extends('layouts.base')
+
+@section('content')
 <x-guest-layout>
     <x-auth-card>
         <x-slot name="logo">
@@ -22,6 +25,17 @@
                 <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required />
                 <x-input-error :messages="$errors->get('email')" class="mt-2" />
             </div>
+                <div class="mt-4">
+                    <x-input-label for="birthdate" :value="__('birthdate')" />
+                    <x-text-input id="birthdate" class="block mt-1 w-full" type="date" name="birthdate" :value="old('birthdate')" required />
+                    <x-input-error :messages="$errors->get('birthdate')" class="mt-2" />
+                </div>
+
+                <div class="mt-4">
+                    <x-input-label for="iban" :value="__('iban')" />
+                    <x-text-input id="iban" class="block mt-1 w-full" type="text" name="iban" :value="old('iban')" required />
+                    <x-input-error :messages="$errors->get('birthday')" class="mt-2" />
+                </div>
 
             <!-- Password -->
             <div class="mt-4">
@@ -58,3 +72,4 @@
         </form>
     </x-auth-card>
 </x-guest-layout>
+    @endsection

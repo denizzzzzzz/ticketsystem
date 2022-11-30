@@ -24,10 +24,8 @@ Route::get('Over-Ons',[PagesController::class, 'ViewAboutPage'])->name('about');
 
 Route::get('Events',[PagesController::class, 'ViewEventsPage'])->name('events');
 
-Route::get('/logout', [\App\Http\Controllers\Auth\AuthenticatedSessionController::class, 'logout'])->name('logout');
-
 Route::group(['middleware'=>'auth'], function(){
-    route::resource('addevents', EventsController::class);
+    route::resource('admin', EventsController::class);
 
 });
 
