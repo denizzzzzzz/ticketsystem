@@ -26,7 +26,8 @@ Route::get('Events',[PagesController::class, 'ViewEventsPage'])->name('events');
 
 Route::group(['middleware'=>'auth'], function(){
     route::resource('admin', EventsController::class);
-
+    });
+Route::group(['middleware'=>'auth'], function(){
+    route::resource('/addevents', EventsController::class);
 });
-
 require __DIR__.'/auth.php';

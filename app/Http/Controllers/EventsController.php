@@ -14,6 +14,7 @@ class EventsController extends Controller
     public function index()
     {
         return view('adminpage');
+        return view('/addevents');
     }
 
 

@@ -7,7 +7,13 @@
         <div class="flex justify-center">
         <h1 class="text-white text-8xl font-medium"> Edit Events:</h1>
         </div>
-        <button class="text-2xl text-white bg-sky-500/50 rounded-lg p-4 m-4">Add events</button>
+
+
+            @csrf
+            <button href="{{ url('addevents') }}" type ="submit" class="text-2xl text-white bg-sky-500/50 rounded-lg p-4 m-4">Add events</button>
+
+        <a class="text-2xl" href="{{ route('register') }}" class="ml-4 text-lg text-gray-700 dark:text-white ">Register</a>
+
     </div>
     <div class="flex justify-center text-white text-4xl mt-8">
 

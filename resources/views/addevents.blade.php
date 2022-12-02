@@ -2,5 +2,5 @@
 @extends('layouts.base')
 @section('content')
 
-    <h1 class="h1">test</h1>
+<h1>hello world</h1>
 @endsection
