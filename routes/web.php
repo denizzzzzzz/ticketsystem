@@ -20,14 +20,13 @@ Route::get('/',[PagesController::class, 'ViewHomePage'])->name('home');
 
 Route::get('Contact',[PagesController::class, 'ViewContactPage'])->name('contact');
 
-Route::get('Over-Ons',[PagesController::class, 'ViewAboutPage'])->name('about');
+Route::get('Over ons',[PagesController::class, 'ViewAboutPage'])->name('about');
 
 Route::get('Events',[PagesController::class, 'ViewEventsPage'])->name('events');
 
-Route::group(['middleware'=>'auth'], function(){
-    route::resource('admin', EventsController::class);
-    });
-Route::group(['middleware'=>'auth'], function(){
-    route::resource('/addevents', EventsController::class);
+Route::middleware('auth')->group(function () {
+route::resource('Create Events',PagesController::class);
 });
+
+
 require __DIR__.'/auth.php';

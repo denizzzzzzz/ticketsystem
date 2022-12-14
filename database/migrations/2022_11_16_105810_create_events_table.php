@@ -16,10 +16,10 @@ return new class extends Migration
         Schema::create('events', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('photo');
-            $table->dateTime('event_start');
-            $table->dateTime('event_end');
-            $table->unsignedBigInteger('available_tickets');
+            $table->string('photo')->nullable();
+            $table->date('event_start');
+            $table->date('event_end');
+            $table->unsignedBigInteger('available_tickets')->nullable();
             $table->string('location');
             $table->decimal('price', 20, 2);
             $table->text('description');

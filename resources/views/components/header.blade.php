@@ -11,7 +11,7 @@
                 <a class="" href="Contact">Contact</a>
             </li>
             <li class="hover:text-white">
-                <a class="nav-link" href="Over-Ons">About</a>
+                <a class="nav-link" href="Over ons">About</a>
             </li>
             <li class="hover:text-white">
                 <a class="nav-link" href="Events">Events</a>
