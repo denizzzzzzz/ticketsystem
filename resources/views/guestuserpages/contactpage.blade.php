@@ -2,11 +2,9 @@
 
 @section('content')
     <section class="bg-gray-900">
-        <div class="bg-[#000000]">
             <div class="flex justify-center">
-            <h1 class="text-8xl text-[#EDF2F4] font-medium pb-4">Contact us</h1>
+            <h1 class="text-7xl text-[#EDF2F4] font-light pb-4">Neem contact met ons op!</h1>
             </div>
-        </div>
         <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
 
             <p class="mb-4  font-light text-center text-gray-400 sm:text-xl">Do you have any complaints about an event or does your ticket not work? Don't hesitate to contact us!</p>

@@ -1,10 +1,10 @@
 @extends('layouts.base')
-    @section('content')
+    @section('content') 
         @auth
             @if(Auth::user()->is_admin)                      
                 <div class="flex justify-center">
                     <div class="w-full max-w-xs">  
-                        <form action="{{ url('Create Events') }}" method="post" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+                        <form action="{{ url('manage-events') }}" method="post" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
                             @csrf
                                 <div class="mb-4"> 
                                     <label class="block text-gray-700 text-sm font-bold mb-2" for="Event naam">

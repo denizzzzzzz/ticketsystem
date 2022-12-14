@@ -18,14 +18,14 @@ use App\Http\Controllers\EventsController;
 
 Route::get('/',[PagesController::class, 'ViewHomePage'])->name('home');
 
-Route::get('Contact',[PagesController::class, 'ViewContactPage'])->name('contact');
+Route::get('contact',[PagesController::class, 'ViewContactPage'])->name('contact');
 
-Route::get('Over ons',[PagesController::class, 'ViewAboutPage'])->name('about');
+Route::get('over-ons',[PagesController::class, 'ViewAboutPage'])->name('about');
 
-Route::get('Events',[PagesController::class, 'ViewEventsPage'])->name('events');
+Route::get('events',[PagesController::class, 'ViewEventsPage'])->name('events');
 
 Route::middleware('auth')->group(function () {
-route::resource('Create Events',PagesController::class);
+route::resource('manage-events',PagesController::class);
 });
 
 
