@@ -25,7 +25,11 @@ Route::get('over-ons',[PagesController::class, 'ViewAboutPage'])->name('about');
 Route::get('events',[PagesController::class, 'ViewEventsPage'])->name('events');
 
 Route::middleware('auth')->group(function () {
-route::resource('manage-events',PagesController::class);
+Route::get('show-create-events',[PagesController::class, 'index'])->name('show-create-events');
+Route::post('process-create-events',[PagesController::class, 'store'])->name('process-create-events');
+Route::get('/edit-event/{id}', [PagesController::class, 'showEditEvents'])->name('show-edit-events');
+Route::post('/edit-event/{id}', [PagesController::class, 'processEditEvents'])->name('process-edit-events');
+Route::get('/delete-event/{id}', [PagesController::class, 'deleteEvent'])->name('delete-event');
 });
 
 

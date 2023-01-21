@@ -18,10 +18,14 @@
                 <a class="text-2xl" href="{{ route('register') }}" class="ml-4 text-lg text-gray-700 dark:text-white ">Register</a>
                 <a class="text-2xl" href="{{ route('login') }}" class="text-lg text-gray-700 dark:text-white ">Login</a>
             @endguest
-            <h2 class="text-whitesmoke text-lg">U bent ingelogd als {{ Auth::user()->name }}.</h2>
+            @auth
+                @if(Auth::user())
+                <h2 class="text-whitesmoke text-lg">U bent ingelogd als {{ Auth::user()->name }}.</h2>
             <form action="{{ route('logout') }}" method="POST">
                 @csrf
                 <button type="submit">Log uit</button>
             </form>
+        @endauth
+        @endif
     </div>
 </nav>
